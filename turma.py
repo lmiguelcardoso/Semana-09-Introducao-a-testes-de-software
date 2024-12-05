@@ -9,7 +9,7 @@ class Turma:
       self.turma.append(i);
       if((self.menorNota == None) or (self.menorNota.nota > i.nota)):
         self.menorNota = i;
-      elif((self.maiorNota == None) or (self.menorNota.nota < i.nota)):
+      if((self.maiorNota == None) or (self.maiorNota.nota < i.nota)):
         self.maiorNota = i;                 
 
   def mostrarAlunos(self):  
